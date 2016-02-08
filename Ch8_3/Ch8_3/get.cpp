@@ -19,11 +19,15 @@ istream& get(istream& in){
         }
         if (in.fail()) {
             cerr<<"bad data, try again";
-            
+            cin.clear();
+            in.ignore(200,' ');
+            continue;
         }
+        cout<<ival<<" ";
+    
     }
 
-
+    in.clear();
     return in;
 
 }

@@ -12,7 +12,9 @@ using namespace std;
 
 int main(int argc, const char * argv[]) {
     cout << "Hello, World!\n";
-    
-    
+    double dval;
+    get(cin);
+    cin>>dval;
+    cout<<dval<<endl;
     return 0;
 }
